@@ -1,0 +1,87 @@
+         
+
+            .thumbnail {
+                width: 100%;
+                margin-bottom: 8px;
+                position: relative;
+            }
+            .video-duration {
+                position: absolute;
+                bottom: 8px;
+                right: 8px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 4px 4px;
+                border-radius: 2px;
+            }
+            .thumbnail-link {
+                display: block;
+            }
+            .thumbnail-img {
+                width: 100%;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 50px 1fr;              
+            }
+           
+          
+            
+            .channel-img {
+                width: 36px;
+                border-radius: 50px;
+                vertical-align: top;
+            }
+
+            .info {
+                font-weight: 500;
+                vertical-align: top;
+                margin-bottom: 10px;
+            }
+
+            .video-title-link {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .video-title-link:hover {
+                text-decoration: underline;
+            }
+
+            .author {
+                color: gray;
+                font-size: 13px;
+                margin-bottom: 6px;
+            }
+
+            .date {
+                color: gray;
+                font-size: 13px;
+            }
+
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 40px;
+            }
+
+            @media (max-width: 750px) {
+                .video-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width:751px) and (min-width:999px) {
+                 .video-grid {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            @media (min-width: 1000px) {
+                .video-grid {
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            }
