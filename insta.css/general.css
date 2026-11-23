@@ -12,3 +12,9 @@
     padding-left: 96px;
 
     }
+
+    @media (max-width: 700px) {
+        body {
+            padding: 68px 8px 24px;
+        }
+    }

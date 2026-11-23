@@ -160,6 +160,58 @@
     }
 }
 
+@media (max-width: 700px) {
+    .left-section {
+        flex: 0 0 118px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .youtube-logo {
+        width: 88px;
+        height: 44px;
+        margin-left: 12px;
+    }
+
+    .middle-section {
+        justify-content: flex-end;
+        margin: 0 8px;
+    }
+
+    .search-bar,
+    .voice-icon-button {
+        display: none;
+    }
+
+    .search-button {
+        width: 40px;
+        flex-basis: 40px;
+        height: 40px;
+        margin: 0;
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+    }
+
+    .right-section {
+        width: 96px;
+        justify-content: flex-end;
+        gap: 14px;
+        padding-right: 12px;
+    }
+
+    .right-section .header-icon-container:nth-child(1),
+    .right-section .header-icon-container:nth-child(2) {
+        display: none;
+    }
+
+    .user-profile-icon {
+        margin-right: 0;
+    }
+}
+
 .upload-icon {
     width: 24px;
     height: 24px; 
