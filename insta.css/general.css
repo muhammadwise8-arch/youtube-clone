@@ -13,91 +13,58 @@
 
     }
 
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #0f0f0f;
+            color: #f1f1f1;
+        }
+
+        .header,
+        .sidebar {
+            background-color: #0f0f0f;
+        }
+
+        .header {
+            border-bottom-color: #303030;
+        }
+
+        .search-bar {
+            border-color: #303030;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .search-bar::placeholder {
+            color: #aaa;
+        }
+
+        .search-button {
+            border-color: #303030;
+            background-color: #222;
+        }
+
+        .voice-icon-button,
+        .sidebar-link:hover {
+            background-color: #272727;
+        }
+
+        .hamburger-menu,
+        .search-icon,
+        .voice-icon-button img,
+        .upload-icon,
+        .youtube-apps-icon,
+        .notifications-icon,
+        .sidebar-link img {
+            filter: brightness(0) invert(1);
+        }
+
+        .youtube-logo {
+            filter: invert(1) hue-rotate(180deg);
+        }
+    }
+
     @media (max-width: 700px) {
         body {
             padding: 68px 8px 24px;
         }
     }
-html.dark-theme body {
-    background-color: #0f0f0f;
-}
-
-.color-toggle {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 200;
-    display: flex;
-    width: 48px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #777;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #111;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-}
-
-.color-toggle svg {
-    width: 24px;
-    height: 24px;
-}
-
-.color-toggle:focus-visible {
-    outline: 2px solid #1a73e8;
-    outline-offset: 3px;
-}
-html.dark-theme body {
-    color: #f1f1f1;
-}
-
-html.dark-theme .header,
-html.dark-theme .sidebar {
-    background-color: #0f0f0f;
-}
-
-html.dark-theme .header {
-    border-bottom-color: #303030;
-}
-
-html.dark-theme .search-bar {
-    border-color: #303030;
-    background-color: #121212;
-    color: #f1f1f1;
-}
-
-html.dark-theme .search-bar::placeholder {
-    color: #aaa;
-}
-
-html.dark-theme .search-button {
-    border-color: #303030;
-    background-color: #222;
-}
-
-html.dark-theme .voice-icon-button,
-html.dark-theme .sidebar-link:hover,
-html.dark-theme .color-toggle {
-    background-color: #272727;
-}
-
-html.dark-theme .color-toggle {
-    border-color: #555;
-    color: #f1f1f1;
-}
-
-html.dark-theme .hamburger-menu,
-html.dark-theme .search-icon,
-html.dark-theme .voice-icon-button img,
-html.dark-theme .upload-icon,
-html.dark-theme .youtube-apps-icon,
-html.dark-theme .notifications-icon,
-html.dark-theme .sidebar-link img {
-    filter: brightness(0) invert(1);
-}
-
-html.dark-theme .youtube-logo {
-    filter: invert(1) hue-rotate(180deg);
-}
