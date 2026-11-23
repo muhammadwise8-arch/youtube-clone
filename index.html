@@ -393,7 +393,7 @@
        
       
        
-            <button class="color-toggle" type="button" aria-label="Invert colors" aria-pressed="false" title="Invert colors">
+            <button class="color-toggle" type="button" aria-label="Toggle dark theme" aria-pressed="false" title="Toggle dark theme">
             <svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle>
                 <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path>
@@ -404,7 +404,7 @@
             const colorToggle = document.querySelector('.color-toggle');
 
             colorToggle.addEventListener('click', () => {
-                const isInverted = document.documentElement.classList.toggle('color-inverted');
+                const isInverted = document.documentElement.classList.toggle('dark-theme');
                 colorToggle.setAttribute('aria-pressed', String(isInverted));
             });
         </script>
