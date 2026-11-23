@@ -404,8 +404,8 @@
             const colorToggle = document.querySelector('.color-toggle');
 
             colorToggle.addEventListener('click', () => {
-                const isInverted = document.documentElement.classList.toggle('dark-theme');
-                colorToggle.setAttribute('aria-pressed', String(isInverted));
+                const isDarkTheme = document.documentElement.classList.toggle('dark-theme');
+                colorToggle.setAttribute('aria-pressed', String(isDarkTheme));
             });
         </script>
 </body>
