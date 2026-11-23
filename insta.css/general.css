@@ -19,12 +19,12 @@
             color: #f1f1f1;
         }
 
-        .header,
-        .sidebar {
+        body .header,
+        body .sidebar {
             background-color: #0f0f0f;
         }
 
-        .header {
+        body .header {
             border-bottom-color: #303030;
         }
 
