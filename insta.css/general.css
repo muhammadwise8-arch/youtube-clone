@@ -18,8 +18,8 @@
             padding: 68px 8px 24px;
         }
     }
-html.color-inverted {
-    filter: invert(1);
+html.dark-theme body {
+    background-color: #0f0f0f;
 }
 
 .color-toggle {
@@ -48,4 +48,56 @@ html.color-inverted {
 .color-toggle:focus-visible {
     outline: 2px solid #1a73e8;
     outline-offset: 3px;
+}
+html.dark-theme body {
+    color: #f1f1f1;
+}
+
+html.dark-theme .header,
+html.dark-theme .sidebar {
+    background-color: #0f0f0f;
+}
+
+html.dark-theme .header {
+    border-bottom-color: #303030;
+}
+
+html.dark-theme .search-bar {
+    border-color: #303030;
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+html.dark-theme .search-bar::placeholder {
+    color: #aaa;
+}
+
+html.dark-theme .search-button {
+    border-color: #303030;
+    background-color: #222;
+}
+
+html.dark-theme .voice-icon-button,
+html.dark-theme .sidebar-link:hover,
+html.dark-theme .color-toggle {
+    background-color: #272727;
+}
+
+html.dark-theme .color-toggle {
+    border-color: #555;
+    color: #f1f1f1;
+}
+
+html.dark-theme .hamburger-menu,
+html.dark-theme .search-icon,
+html.dark-theme .voice-icon-button img,
+html.dark-theme .upload-icon,
+html.dark-theme .youtube-apps-icon,
+html.dark-theme .notifications-icon,
+html.dark-theme .sidebar-link img {
+    filter: brightness(0) invert(1);
+}
+
+html.dark-theme .youtube-logo {
+    filter: invert(1) hue-rotate(180deg);
 }
